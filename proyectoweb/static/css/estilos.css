@@ -1,8 +1,8 @@
 :root {
     color-scheme: light;
     font-family: Arial, sans-serif;
-    color: #1f2937;
-    background: #f3f4f6;
+    color: #3f2a1d;
+    background: #f5eadb;
 }
 
 body {
@@ -15,7 +15,7 @@ body {
 }
 
 .encabezado {
-    background: #1d4ed8;
+    background: #6f4e37;
     color: white;
     padding: 1.25rem 0;
 }
@@ -41,18 +41,22 @@ nav a {
     text-decoration: none;
 }
 
+a {
+    color: #6f4e37;
+}
+
 .contenido {
     padding: 3rem 0;
 }
 
 .tarjeta {
-    background: white;
+    background: #fffaf3;
     border-radius: 12px;
     box-shadow: 0 4px 14px rgb(0 0 0 / 10%);
     padding: 2rem;
 }
 
 .etiqueta {
-    color: #1d4ed8;
+    color: #9a6b43;
     font-weight: bold;
 }

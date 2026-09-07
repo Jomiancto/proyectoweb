@@ -1,17 +1,19 @@
 {% extends 'base.html' %}
 
-{% block title %}Acerca | ProyectoWeb{% endblock %}
+{% block title %}Acerca | Café Local{% endblock %}
 
 {% block content %}
 <section class="tarjeta">
-    <p class="etiqueta">Ruta: /acerca</p>
-    <h2>Acerca del proyecto</h2>
-    <p><strong>Nombre:</strong> {{ nombre }}</p>
-    <p>{{ descripcion }}</p>
-    <h3>Redes sociales</h3>
+    <p class="etiqueta">Información del local</p>
+    <h2>Acerca de nuestro café</h2>
+    <p>Somos una cafetería local pensada para quienes buscan un lugar tranquilo para disfrutar un buen café.</p>
+    <h3>Características</h3>
     <ul>
-        <li>Instagram: {{ rrss.instagram }}</li>
-        <li>GitHub: {{ rrss.github }}</li>
+        <li><strong>WiFi:</strong> {{ wifi }}</li>
+        <li><strong>Enchufes:</strong> {{ enchufes }}</li>
+        <li><strong>Café:</strong> {{ cafe }}</li>
+        <li><strong>Ambiente:</strong> {{ ambiente }}</li>
     </ul>
+    <p><a href="{% url 'home' %}">Volver a Inicio</a></p>
 </section>
 {% endblock %}

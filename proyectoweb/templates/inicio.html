@@ -1,12 +1,12 @@
 {% extends 'base.html' %}
 
-{% block title %}Inicio | ProyectoWeb{% endblock %}
+{% block title %}Inicio | Café Local{% endblock %}
 
 {% block content %}
 <section class="tarjeta">
-    <p class="etiqueta">Ruta: /</p>
-    <h2>Bienvenido a ProyectoWeb</h2>
-    <p>Esta página es entregada por la vista <strong>mostrar_home()</strong>.</p>
-    <p>Django resuelve la ruta raíz y renderiza la plantilla <strong>inicio.html</strong>.</p>
+    <p class="etiqueta">Cafetería local</p>
+    <h2>Bienvenido a Café Local</h2>
+    <p>Un espacio tranquilo para disfrutar un buen café, estudiar o compartir.</p>
+    <p>Conoce la información de nuestro local en la página <a href="{% url 'acerca' %}">Acerca del café</a>.</p>
 </section>
 {% endblock %}

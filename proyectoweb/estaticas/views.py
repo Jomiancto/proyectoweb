@@ -7,11 +7,9 @@ def mostrar_home(request):
 
 def mostrar_acerca(request):
     datos = {
-        'nombre': 'ProyectoWeb',
-        'descripcion': 'Proyecto Django creado para practicar rutas y plantillas.',
-        'rrss': {
-            'instagram': '@proyectoweb',
-            'github': 'github.com/Jomiancto/proyectoweb',
-        },
+        'wifi': '300mbps',
+        'enchufes': 10,
+        'cafe': 'Tostado',
+        'ambiente': 'Silencioso',
     }
     return render(request, 'acerca.html', datos)
