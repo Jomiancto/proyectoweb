@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}ProyectoWeb{% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+</head>
+<body>
+    <header class="encabezado">
+        <div class="contenedor">
+            <h1>ProyectoWeb</h1>
+            <nav aria-label="Navegación principal">
+                <a href="{% url 'home' %}">Inicio</a>
+                <a href="{% url 'acerca' %}">Acerca</a>
+            </nav>
+        </div>
+    </header>
+    <main class="contenedor contenido">
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>

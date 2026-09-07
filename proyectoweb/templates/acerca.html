@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}Acerca | ProyectoWeb{% endblock %}
+
+{% block content %}
+<section class="tarjeta">
+    <p class="etiqueta">Ruta: /acerca</p>
+    <h2>Acerca del proyecto</h2>
+    <p><strong>Nombre:</strong> {{ nombre }}</p>
+    <p>{{ descripcion }}</p>
+    <h3>Redes sociales</h3>
+    <ul>
+        <li>Instagram: {{ rrss.instagram }}</li>
+        <li>GitHub: {{ rrss.github }}</li>
+    </ul>
+</section>
+{% endblock %}
